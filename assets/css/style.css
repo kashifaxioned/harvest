@@ -541,3 +541,37 @@ li {
 =================================*/ 
 
 
+/* our work page styling starts here */
+
+.our-work { padding: 3.37rem 0 .75rem; }
+
+.work-list-wrapper { width: 100%; }
+
+.category-list {
+  padding-bottom: 4.93rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.category-item:not(:last-child)::after {
+  content: "/";
+  padding-left: 2.5rem;
+}
+
+.work-category {
+  cursor: pointer;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.our-work-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.our-work-item {
+  flex-basis: calc(25% - 10px);
+}
+/* our work page styling ends here */
+
