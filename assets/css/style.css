@@ -245,3 +245,24 @@ li {
 
 /* banner styling ends here */
 
+/* help styling starts here */
+
+.help-section { padding: 5.4rem 0; }
+
+.section-title {
+  font-size: 1.7rem;
+  font-weight: 500;
+  line-height: 1;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.section-info {
+  padding-top: 3.43rem;
+  font-size: 16px;
+  line-height: 1.7;
+  text-align: center;
+}
+
+/* help styling ends here */
+
