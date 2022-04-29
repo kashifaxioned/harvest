@@ -84,7 +84,8 @@ sub { bottom: -.25em; }
 /*for all*/
 body {
   box-sizing: border-box;
-  font-family: sans-serif;
+  color: #484745;
+  font-family: "Poppins", sans-serif;
 }
 
 a { 
@@ -97,10 +98,11 @@ li {
   list-style-type: none;
 }
 
+* { box-sizing: border-box; }
+
 /*for wrapper*/
 .wrapper {
-  max-width: 1360px;
-  width: 86%; 
+  width: 58.5%; 
   margin: 0 auto;
 }
 /*=================================
@@ -108,47 +110,75 @@ li {
 =================================*/
 
 
+.header-section .wrapper {
+  width: 96.7%;
+  height: 4.12rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.control-btn { display: none; }
+
+.logo a {
+  display: flex;
+  text-indent: -999999px;
+}
+
+.menu-section { flex-basis: 92.5%; }
+
+.nav-section { 
+  display: flex; 
+  align-items: baseline;
+}
+
+.nav-list {
+  flex-basis: 93%;
+  display: flex;
+  justify-content: center;
+  gap: 2.12rem;
+}
 
 
+.nav-items a {
+  color: inherit;
+  font-size: .87rem;
+  font-weight: 500;
+  letter-spacing: 1.1px;
+  text-transform: uppercase;
+}
+
+.active { color: #f0623a; }
+
+.social-icon-list {
+  flex-basis: 6.86%;
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px
+}
+
+.social-name {
+  text-indent: -999999px;
+  display: inline-block;
+}
+
+.header-section .social-icon::after { font-size: 16px; }
+
+.social-icon::after {
+  color: #f0623a;
+  font-family: "FontAwesome";
+}
+
+.facebook::after { content: "\f082"; }
+
+.twitter::after { content: "\f099"; }
+
+.linkedin::after { content: "\f08c"; }
+
+.instagram::after { content: "\f16d"; }
 
 
 /*=================================
   Header styling ends here
 =================================*/  
 
-/*=================================
-  main styling starts here
-=================================*/
-
-
-
-
-
-
-
-
-/*=================================
-  main styling ends here
-=================================*/
-
-/*=================================
-  footer styling starts here
-=================================*/ 
-
-
-
-
-
-
-
- /*=================================
-  footer styling ends here
-=================================*/ 
-
-/*media query starts*/
-/*media query for 995px starts here*/
-@media only screen and (max-width: 995px) {
-
-
-
-}  
