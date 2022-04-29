@@ -340,4 +340,24 @@ li {
 
  /* work section styling ends here */
 
+ /* partner styling starts here */
+
+ .partners-section { 
+  padding: 5.9rem 0 6.5rem; 
+  background-color: #f0623a;
+  color: #fff;
+}
+
+.partners-section .section-title { padding-bottom: 4.7rem; }
+
+.partners-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2.18rem;
+}
+
+.partners-list-item { flex-basis: calc(20% - 28px); }
+ 
+ /* partner styling ends here */
+
  
