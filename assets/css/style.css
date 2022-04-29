@@ -319,4 +319,25 @@ li {
 
  /* service styling ends here */
 
+ /* work section styling starts here */
+
+ .work-section { 
+  padding-top: 5.6rem;
+  background-color: #f0f0f0; 
+}
+
+.work-section .section-info {
+  padding: 1.8rem 0 4rem; 
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.portfolio-wrapper { width: 100%; }
+
+.portfolio { display: flex; }
+
+ /* work section styling ends here */
+
  
