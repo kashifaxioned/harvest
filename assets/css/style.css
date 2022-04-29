@@ -182,3 +182,66 @@ li {
   Header styling ends here
 =================================*/  
 
+/*=================================
+  main styling starts here
+=================================*/
+
+/* banner styling starts here */
+
+.banner .wrapper { 
+  width: 100%; 
+  position: relative;
+}
+
+.banner img { 
+  height: 54vh;
+  object-fit: cover; }
+
+.banner-info {
+  width: 50%;
+  position: absolute;
+  bottom: 3.1rem;
+  right: 0;
+}
+
+.banner-text {
+  padding: 25px 0 20px 20px;
+  background-color: #f0623a;
+  color: #fff;
+}
+
+.banner-head { 
+  font-size: 20px;
+  letter-spacing: 1.5px;
+  line-height: 1;
+  text-transform: uppercase; 
+}
+
+.banner-subhead { 
+  font-size: 18px; 
+  letter-spacing: 1.5px;
+}
+
+.read-more {
+  margin-top: 20px;
+  padding: 15px 22px;
+  color: #f0623a;
+  background-color: #fff;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.read-more::after {
+  content: "\f054";
+  font-family: "FontAwesome";
+  margin-left: 8px;
+}
+
+.banner li { width: 100%; }
+
+.banner-list-item:not(:first-child) { display: none; }
+
+/* banner styling ends here */
+
