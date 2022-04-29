@@ -464,3 +464,80 @@ li {
   main styling ends here
 =================================*/
 
+/*=================================
+  footer styling starts here
+=================================*/ 
+
+.footer-section {
+  padding: 5.93rem 0 2.37rem;
+  background-color: #3a3a3a;
+  color: #fff;
+}
+
+.footer-info-list { display: flex; }
+
+.footer-info-item {
+  margin-right: 11.7%;
+  flex-basis: 22.5%;
+}
+
+.footer-title {
+  padding-bottom: 2.18rem;
+  display: inline-block;
+  font-size: 25px;
+  line-height: 1;
+  text-transform: capitalize;
+}
+
+.footer-info-item-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.contact-info {
+  margin-right: 10px;
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.phone::before { content: "\f095"; }
+
+.mail::before { content: "\f0e0"; }
+
+.location::before { content: "\f3c5"; }
+
+.contact-info::before {
+  font-family: "FontAwesome";
+  font-size: 14px; 
+}
+
+.footer-info-item-list a{
+  color: inherit;
+  font-size: 15px;
+  text-transform: capitalize;
+}
+
+.copyright {
+  padding: 3.25rem 0;
+  text-align: center;
+}
+
+.footer-section .social-icon-list {
+  width: 14.4%;
+  margin: 0 auto;
+}
+
+.footer-section .social-icon::after {
+  color: #fff;
+  font-size: 2rem;
+}
+
+ /*=================================
+  footer styling ends here
+=================================*/ 
+
+
