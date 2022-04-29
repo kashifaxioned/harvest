@@ -360,4 +360,26 @@ li {
  
  /* partner styling ends here */
 
+ /* affiliations styling starts here */
+
+ .affiliations-section { 
+    padding: 5.6rem 0;
+    background-color: #f0f0f0;
+  }
+
+ .affiliations-section .section-title { padding-bottom: 3.4rem; }
+ 
+ .affiliation-list {
+   display: flex;
+   flex-wrap: wrap;
+    gap: 1.87rem;
+  }
+
+ .affiliation-list-item {
+   padding: 1.87rem;
+   flex-basis: calc(25% - 1.4rem);
+   background-color: #fff;
+ }
+ /* affiliations styling ends here */
+
  
