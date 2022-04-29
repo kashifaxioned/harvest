@@ -266,3 +266,57 @@ li {
 
 /* help styling ends here */
 
+/* service styling starts here */
+
+ .service-section { padding: 5.4rem 0; } 
+
+ .service-list {
+    padding-top: 5.2rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 6.87rem;
+  }
+
+ .service-list-item {
+    flex-basis: calc(20% - 88px);
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  .service-list-item::before {
+    padding-bottom: 2.8rem;
+    display: block;
+    color: #f0623a;
+    font-family: "FontAwesome";
+    font-size: 5rem;
+  }
+
+ .integrated-strategy::before { content: "\f5dc"; }
+
+ .paid-social::before { content: "\f0a1"; }
+
+ .paid-search::before { content: "\f8cc"; }
+
+ .display::before { content: "\f3fa"; }
+
+ .data-analytics::before { content: "\e29c"; }
+
+ .seo::before { content: "\f201"; }
+
+ .content-marketing::before { content: "\f303"; }
+
+ .e-commerce::before { content: "\f07a"; }
+
+ .ux::before { content: "\f568"; }
+
+ .all-services::before { 
+    content: "\f054";
+    font-size: 2rem;
+  }
+
+ /* service styling ends here */
+
+ 
