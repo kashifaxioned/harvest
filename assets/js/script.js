@@ -20,22 +20,13 @@ function hideNav() {
 }
 
 
+// nav filter
 
+let navItems = $(".nav-items")
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+navItems.children().click((e) => {
+  navItems.children().map((idx, ele) => {
+    $(ele).parent().removeClass("active")
+  })
+  $(e.target).parent().addClass("active")
+})
