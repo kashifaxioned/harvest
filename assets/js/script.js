@@ -30,3 +30,15 @@ navItems.children().click((e) => {
   })
   $(e.target).parent().addClass("active")
 })
+
+// slick slider functionality for banner section
+
+$(".banner-list").slick({
+  autoplay: true,
+  arrows: true,
+  dots: false,
+  infinite: true,
+  speed: 300,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+})
