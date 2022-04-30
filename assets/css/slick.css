@@ -216,3 +216,46 @@
 {
     content: '\f053';
 }
+
+/* Dots */
+
+.slick-dots
+{
+    position: absolute;
+    bottom: -35px;
+    display: block;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+}
+.slick-dots li
+{
+    position: relative;
+    display: inline-block;
+    margin: 0 5px;
+    padding: 0;
+}
+.slick-dots li button
+{
+    font-size: 0;
+    padding: 5px;
+    border: none;
+    border-radius: 50%;
+    background-color: #484745;
+}
+.slick-dots li button:hover,
+.slick-dots li button:focus
+{
+    outline: none;
+}
+.slick-dots li button:hover:before,
+.slick-dots li button:focus:before
+{
+    opacity: 1;
+}
+.slick-dots li.slick-active button
+{
+    background-color: #f0623a;
+}
