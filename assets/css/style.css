@@ -467,6 +467,9 @@ li {
 
 .error-border { border: 2px solid #f0623a; }
 
+.load-more-btn { display: none; }
+
+
  /* contact styling ends here */
 
 /*=================================
@@ -1023,6 +1026,25 @@ li {
 @media only screen and (max-width: 425px) {
 
   .partners-list-item, .service-list-item, .affiliation-list-item, .benefits-item, .values-item { flex-basis: 100%;  }
+
+  .partners-section .load-more-btn{ color: #fff; }
+
+.partners-section .wrapper, .affiliations-section .wrapper, .service-section .wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.load-more-btn {
+  display: flex;
+  margin: 30px auto 0;
+  padding: 10px 15px;
+  border-radius: 5px;
+  border: 1px solid;
+  display: inline-block;
+  color: #f0623a;
+  cursor: pointer;
+  text-transform: uppercase;
+}
   
 }
 
