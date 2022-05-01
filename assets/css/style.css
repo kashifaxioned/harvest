@@ -459,7 +459,13 @@ li {
   text-transform: capitalize;
 }
 
-.error { display: none; }
+.error {
+  color: #f0623a;
+  font-size: 12px;
+  font-style: italic;
+}
+
+.error-border { border: 2px solid #f0623a; }
 
  /* contact styling ends here */
 
