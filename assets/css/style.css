@@ -195,7 +195,8 @@ li {
 
 .banner img { 
   height: 54vh;
-  object-fit: cover; }
+  object-fit: cover; 
+}
 
 .banner-info {
   width: 50%;
@@ -466,9 +467,6 @@ li {
 }
 
 .error-border { border: 2px solid #f0623a; }
-
-.load-more-btn { display: none; }
-
 
  /* contact styling ends here */
 
@@ -886,9 +884,14 @@ li {
   .wrapper { width: 85%; }
 
   .nav-items a { font-size: 0.75rem; }
+
+  .position-category, .position-type { display: none; }
+
 }
 
 @media only screen and (max-width: 768px) {
+
+  .menu-section { overflow: hidden; }
 
   .header-section .wrapper { width: 90%; }
 
@@ -902,11 +905,11 @@ li {
     right: 0;
     top: 0;
     bottom: 0;
-    z-index: 2;
+    z-index: 3;
+    display: none;
     background-color: #f0623a;
     color: #fff;
-    transform: translateX(250px);
-    transition: transform 1s ease-in-out;
+    animation: fade 1s ease-in-out;    
   }
 
   .menu-section { 
@@ -944,10 +947,6 @@ li {
 
   .active { color: #000; }
 
-  .responsive-nav {
-    transform: translateX(0);
-  }
-
   .nav-list {
     flex-basis: 80%;
     flex-direction: column;
@@ -957,7 +956,7 @@ li {
 
   .nav-items { flex-basis: 14.28%; }
 
-  .responsive-nav .social-icon::after { color: #fff; }
+  .social-icon::after { color: #fff; }
 
   .service-list { gap: 2rem; }
 
@@ -1012,8 +1011,6 @@ li {
 
   .opportunites-section .wrapper { width: 85%; }
 
-  .position-details { display: none; }
-
   .position-item { cursor: pointer; }
 }
 
@@ -1025,27 +1022,13 @@ li {
 
 @media only screen and (max-width: 425px) {
 
-  .partners-list-item, .service-list-item, .affiliation-list-item, .benefits-item, .values-item { flex-basis: 100%;  }
-
-  .partners-section .load-more-btn{ color: #fff; }
+.partners-list-item, .service-list-item, .affiliation-list-item, .benefits-item, .values-item { flex-basis: 100%;  }
 
 .partners-section .wrapper, .affiliations-section .wrapper, .service-section .wrapper {
   display: flex;
   flex-direction: column;
 }
 
-.load-more-btn {
-  display: flex;
-  margin: 30px auto 0;
-  padding: 10px 15px;
-  border-radius: 5px;
-  border: 1px solid;
-  display: inline-block;
-  color: #f0623a;
-  cursor: pointer;
-  text-transform: uppercase;
-}
-  
 }
 
 
