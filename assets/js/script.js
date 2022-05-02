@@ -11,12 +11,12 @@ let navSection = $(".nav-section")
 
 function showNav() {
   $(".hamburger-btn").addClass("hide")
-  navSection.addClass("responsive-nav")
+  navSection.addClass("flexShow")
 }
 
 function hideNav() {
   $(".hamburger-btn").removeClass("hide")
-  navSection.removeClass("responsive-nav")
+  navSection.removeClass("flexShow")
 }
 
 
@@ -33,51 +33,51 @@ navItems.children().click((e) => {
 
 // slick slider functionality for banner section
 
-$(".banner-list").slick({
-  autoplay: true,
-  arrows: true,
-  dots: false,
-  infinite: true,
-  speed: 300,
-  slidesToShow: 1,
-  slidesToScroll: 1,
-})
+// $(".banner-list").slick({
+//   autoplay: true,
+//   arrows: true,
+//   dots: false,
+//   infinite: true,
+//   speed: 300,
+//   slidesToShow: 1,
+//   slidesToScroll: 1,
+// })
 
 // slick slider functionality for work section
 
-$(".portfolio").slick({
-  autoplay: true,
-  arrows: false,
-  dots: true,
-  infinite: true,
-  speed: 300,
-  slidesToShow: 4,
-  slidesToScroll: 2,
-  responsive: [{
-      breakpoint: 1024,
-      settings: {
-        slidesToShow: 3,
-        slidesToScroll: 2,
-        infinite: true,
-        dots: true
-      }
-    },
-    {
-      breakpoint: 768,
-      settings: {
-        slidesToShow: 2,
-        slidesToScroll: 1
-      }
-    },
-    {
-      breakpoint: 480,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1
-      }
-    }
-  ]
-})
+// $(".portfolio").slick({
+//   autoplay: true,
+//   arrows: false,
+//   dots: true,
+//   infinite: true,
+//   speed: 300,
+//   slidesToShow: 4,
+//   slidesToScroll: 2,
+//   responsive: [{
+//       breakpoint: 1024,
+//       settings: {
+//         slidesToShow: 3,
+//         slidesToScroll: 2,
+//         infinite: true,
+//         dots: true
+//       }
+//     },
+//     {
+//       breakpoint: 768,
+//       settings: {
+//         slidesToShow: 2,
+//         slidesToScroll: 1
+//       }
+//     },
+//     {
+//       breakpoint: 480,
+//       settings: {
+//         slidesToShow: 1,
+//         slidesToScroll: 1
+//       }
+//     }
+//   ]
+// })
 
 // form validation functionality
 
@@ -210,3 +210,35 @@ policy.on("blur", () => {
 
 })
 
+// our-work filter
+
+let categoryList = $(".category-item").children()
+let workList = $(".our-work-item")
+
+categoryList.click((e) => {
+  let targetCategory = $(e.target)
+  categoryList.map((idx, ele) => {
+    let currentItem = $(ele)
+    currentItem.removeClass("active-category")
+    if(e.target === ele) {
+      workList.map((workIdx, workEle) => {
+        if(idx === 0) {
+          $(workEle).removeClass("hide")
+        } else if((idx === workIdx)) {
+          filterList(idx)
+        }else $(workEle).addClass("hide")
+      })
+    }
+  })
+  targetCategory.addClass("active-category")
+})
+
+function filterList (inpIdx) {
+  workList.map((idx, ele) => {
+    if(inpIdx < idx + 2){
+      $(ele).removeClass("hide")
+    }else {
+      $(ele).addClass("hide")
+    }
+  })
+}
